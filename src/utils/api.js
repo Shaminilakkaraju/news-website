@@ -39,13 +39,14 @@ export const fetchNewsByCategory = async (category) => {
 
 export const fetchArticleDetails = async (articleId) => {
   try {
-    const response = await axios.get(`${BASE_URL}/articles/${articleId}`, {
+    const response = await axios.get(`${BASE_URL}/everything`, {
       params: {
+        q: articleId,
         apiKey: API_KEY,
       },
     });
 
-    const article = response.data;
+    const article = response.data.articles[0];  // Assuming the first result is the relevant one
     const relatedArticles = await fetchRelatedArticles(article.title);
 
     return { article, relatedArticles };
@@ -67,7 +68,6 @@ const fetchRelatedArticles = async (query) => {
     handleError(error);
   }
 };
-
 
 export const searchNews = async (query) => {
   try {
