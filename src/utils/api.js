@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
-const BASE_URL = 'google-news13.p.rapidapi.com';
+const API_KEY = '1ad3872e1d5045a59a1aaf55b2e1d72e';
+const BASE_URL = 'https://newsapi.org/v2';
 
 const handleError = (error) => {
   console.error('API Error:', error);
@@ -39,14 +39,13 @@ export const fetchNewsByCategory = async (category) => {
 
 export const fetchArticleDetails = async (articleId) => {
   try {
-    const response = await axios.get(`${BASE_URL}/everything`, {
+    const response = await axios.get(`${BASE_URL}/articles/${articleId}`, {
       params: {
-        q: articleId,
         apiKey: API_KEY,
       },
     });
 
-    const article = response.data.articles[0];  // Assuming the first result is the relevant one
+    const article = response.data;
     const relatedArticles = await fetchRelatedArticles(article.title);
 
     return { article, relatedArticles };
@@ -68,6 +67,7 @@ const fetchRelatedArticles = async (query) => {
     handleError(error);
   }
 };
+
 
 export const searchNews = async (query) => {
   try {
