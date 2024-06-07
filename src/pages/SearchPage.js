@@ -11,7 +11,7 @@ const SearchPage = () => {
   const [searchParams] = useSearchParams();
   const searchQuery = searchParams.get('q') || '';
 
-  const categories = ['Business', 'Entertainment', 'General', 'Health', 'Science', 'Sports', 'Technology', 'Politics', 'Education'];
+  const categories = ['Business', 'Entertainment', 'General', 'Health', 'Science', 'Sports', 'Technology'];
 
   useEffect(() => {
     const fetchData = async () => {

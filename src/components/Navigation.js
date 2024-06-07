@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
 
-const categories = ['Business', 'Entertainment', 'General', 'Health', 'Science', 'Sports', 'Technology', 'Politics', 'Education'];
+const categories = ['Business', 'Entertainment', 'General', 'Health', 'Science', 'Sports', 'Technology'];
 
 const Navigation = () => {
   return (
