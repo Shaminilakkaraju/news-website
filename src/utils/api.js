@@ -68,6 +68,7 @@ const fetchRelatedArticles = async (query) => {
   }
 };
 
+
 export const searchNews = async (query) => {
   try {
     const response = await axios.get(`${BASE_URL}/everything`, {
