@@ -1,0 +1,43 @@
+.footer {
+    background-color: #ffc107;
+    color: black;
+    padding: 20px 0;
+  }
+
+  .social-icons, .app-buttons, .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-icon, .app-buttons a, .contact-details div {
+    margin-right: 10px;
+  }
+  
+  .social-icon:last-child, .app-buttons a:last-child, .contact-details div:last-child {
+    margin-right: 0;
+  }
+  
+  .contact-details a {
+    margin-left: 5px;
+    color: black;
+  }
+  
+  .contact-icon {
+    margin-right: 5px;
+  }
+  
+  .app-buttons a img {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  
+  
+  .copyright {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

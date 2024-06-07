@@ -1,0 +1,61 @@
+.category-page {
+    padding: 20px;
+  }
+  
+  .category-page h1 {
+    margin-bottom: 20px;
+  }
+  
+  .category-page p {
+    font-size: 1.1rem;
+    color: #dc3545;
+  }
+  
+  .category-page .loading {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  /* CategoryFilter.css */
+
+.category-filter {
+    margin-bottom: 20px;
+  }
+  
+  .category-filter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .category-filter ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-filter li {
+    margin-bottom: 5px;
+  }
+  
+  .category-filter button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .category-filter button.active {
+    background-color: #0056b3;
+  }
+  
+  .active-category-title {
+    font-size: 36px;
+    font-weight: bold;
+    color:#343a40;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  

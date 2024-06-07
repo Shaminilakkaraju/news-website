@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #f8f9fa;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .left-section span {
+    margin-right: 10px;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-section p {
+    margin-right: 7px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  .social-icon {
+    margin-left: 10px;
+    font-size: 24px; 
+    margin-right: 10px; 
+  }
+  
+  .social-icon.facebook {
+    color: #3b5998; 
+  }
+  
+  .social-icon.twitter {
+    color: #1da1f2; 
+  }
+  
+  .social-icon.instagram {
+    color: #c13584; 
+  }
+  
+  .social-icon.linkedin {
+    color: #0077b5; 
+  }
+  
+
+  .social-icon.youtube {
+    color: #ff0000; 
+  }
+  
+  .social-icon:hover {
+    opacity: 0.7; 
+  }
+  
+  .subscribe-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .subscribe-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .center-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .logo {
+    max-height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .breaking-news-container {
+    height: 40px;
+    width: 100%;
+    background-color: #ffc107;
+    color: #212529;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .breaking-news-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: scroll 40s linear infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+  }
+  
+  .breaking-news-list li {
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  nav {
+    position: relative;
+    width: 100%;
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav ul li.shop-now a {
+    color: #ffc107;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; 
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #6c757d;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-left: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+  
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .center-section {
+      padding: 10px 0;
+    }
+  
+    .breaking-news-list {
+      flex-direction: column;
+      animation: none;
+    }
+  
+    .breaking-news-list li {
+      margin-bottom: 5px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  }
+  
